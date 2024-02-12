@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>URL Shortener</title>
+  <!-- Include Tailwind CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 h-screen flex flex-col justify-center items-center">
+  <h1 class="text-3xl font-bold mb-8">URL Shortener</h1>
+  <div class="flex flex-col items-center w-4/5">
+    <input type="text" id="longUrl" class="border border-gray-400 rounded-md px-4 py-2 mb-4 w-full" placeholder="Enter a long URL">
+    <button id="shortenButton" class="bg-blue-500 text-white px-4 py-2 rounded-md">Shorten URL</button>
+  </div>
+  <div id="shortUrlContainer" class="mt-8 text-center" title="click to copy">
+    <!-- Short URL will be inserted here -->
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
